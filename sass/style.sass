@@ -1,0 +1,52 @@
+
+/* Color Mixins */
+$white: #fff
+
+
+*, body
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    margin: 0
+
+
+
+#container
+    width: 1920px
+    height: 1080px
+    overflow: hidden
+    background: url('/img/clear.jpg')
+    padding-top: 250px
+
+
+#date-time-panel
+    color: $white
+    width: 50%
+    display: block
+    margin: 0 auto
+    position: relative
+    text-align: center
+    line-height: 1.15
+    letter-spacing: .2rem
+    .time, .date, .weather, .greeting
+        font-weight: 600
+    .time, .date, .weather
+        font-family: 'Adelle', sans-serif
+    .date, .weather
+        font-size: 90px
+        display: inline-block
+    .time
+        font-size: 240px
+        text-transform: lowercase
+        .meridiem
+            font-size: 70px
+    .weather
+        text-align: right
+        padding-left: 10%
+        font-size: 60px
+
+    .greeting
+        font-size: 70px
+        text-align: center
+        font-family: 'Lato', sans-serif
+        font-weight: 200
