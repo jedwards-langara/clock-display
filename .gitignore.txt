@@ -1,0 +1,11 @@
+
+# Created by https://www.gitignore.io/api/git,sass
+
+### Git ###
+*.orig
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+# End of https://www.gitignore.io/api/git,sass
