@@ -2,8 +2,9 @@
 var myTimer = setInterval(setClock, 1000);
 
 function setClock() {
-    document.querySelector(".time").innerHTML = moment().format('h:mm a');
-    document.querySelector(".date").innerHTML = moment().format('LL');
+    document.querySelector(".time").innerHTML = moment().format('h:mm');
+    document.querySelector(".date").innerHTML = moment().format('dddd' + ' ' + 'MMM' + ' ' + 'D' + ', ' + 'YYYY');
+
 };
 
 $(document).ready(function() {

@@ -31,15 +31,12 @@
   font-family: "Adelle", sans-serif;
 }
 #date-time-panel .date, #date-time-panel .weather {
-  font-size: 90px;
+  font-size: 60px;
   display: inline-block;
 }
 #date-time-panel .time {
   font-size: 240px;
   text-transform: lowercase;
-}
-#date-time-panel .time .meridiem {
-  font-size: 70px;
 }
 #date-time-panel .weather {
   text-align: right;
