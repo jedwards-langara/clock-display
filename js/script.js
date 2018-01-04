@@ -13,7 +13,7 @@ $(document).ready(function() {
     woeid: '',
     unit: 'c',
     success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;</h2>';
 
       $(".weather").html(html);
     },
@@ -22,3 +22,17 @@ $(document).ready(function() {
     }
   });
 });
+
+function timeOfDay( ) {
+
+    var clockMeridiem = document.querySelector(".meridiem");
+    var hour = new Date().getHours();
+
+        if ( hour < 12 )  {
+        clockMeridiem.innerHTML = 'am';
+        }
+        else {
+        clockMeridiem.innerHTML = 'pm';
+        console.log(hour)
+        }
+}

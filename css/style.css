@@ -27,25 +27,30 @@
 #date-time-panel .time, #date-time-panel .date, #date-time-panel .weather, #date-time-panel .greeting {
   font-weight: 600;
 }
-#date-time-panel .time, #date-time-panel .date, #date-time-panel .weather {
+#date-time-panel .time, #date-time-panel .date, #date-time-panel .weather, #date-time-panel .meridiem {
   font-family: "Adelle", sans-serif;
 }
 #date-time-panel .date, #date-time-panel .weather {
-  font-size: 60px;
+  font-size: 70px;
   display: inline-block;
 }
 #date-time-panel .time {
   font-size: 240px;
   text-transform: lowercase;
+  display: inline;
 }
 #date-time-panel .weather {
   text-align: right;
   padding-left: 10%;
-  font-size: 60px;
 }
 #date-time-panel .greeting {
   font-size: 70px;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 200;
+}
+#date-time-panel .meridiem {
+  font-size: 70px;
+  display: inline;
+  margin-left: 15px;
 }
