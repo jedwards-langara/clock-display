@@ -10,18 +10,17 @@
   width: 1920px;
   height: 1080px;
   overflow: hidden;
-  background: url("/img/clear.jpg");
-  padding-top: 250px;
+  background: black;
 }
 
 #date-time-panel {
   color: #fff;
   width: 55%;
   display: block;
-  margin: 0 auto;
+  margin: 5.5em auto 0 auto;
   position: relative;
   text-align: center;
-  line-height: 1.15;
+  line-height: 6.25em;
   letter-spacing: 0.2rem;
 }
 #date-time-panel .time, #date-time-panel .date, #date-time-panel .weather, #date-time-panel .greeting {
@@ -47,7 +46,7 @@
   font-size: 70px;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
 }
 #date-time-panel .meridiem {
   font-size: 70px;
