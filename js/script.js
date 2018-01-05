@@ -1,5 +1,10 @@
+
+
+
 //Control TIME w/ Moment.js
-var myTimer = setInterval(setClock, 1000);
+var loadClock = setTimeout(setClock, 1000);
+var updateClock = setInterval(setClock, 10000);
+var updateTOD = setInterval(timeOfDay, 100000);
 
 function setClock() {
     document.querySelector(".time").innerHTML = moment().format('h:mm');
@@ -44,7 +49,7 @@ function timeOfDay( ) {
         clockMeridiem.innerHTML = 'pm';
         greetingMsg.innerHTML = 'Goodnight';
         backgroundIMG.style.background = 'url("/img/night.jpg")';
-    } else if (hour >= 24 && hour < 12){
+    } else if (hour >= 24 || hour < 12){
         clockMeridiem.innerHTML = 'am';
         greetingMsg.innerHTML = 'Good morning';
         backgroundIMG.style.background = 'url("/img/morning.jpg")';

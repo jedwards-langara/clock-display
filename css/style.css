@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   margin: 0;
+  font-family: "Adelle", sans-serif;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -14,24 +15,20 @@
   height: 1080px;
   overflow: hidden;
   background: black;
-  padding-top: 25em;
 }
 
 #date-time-panel {
   color: #fff;
   width: 55%;
+  height: 1080px;
   display: block;
-  margin: 0 auto;
+  margin: 10em auto 0 auto;
   position: relative;
   text-align: center;
-  line-height: 6.25em;
   letter-spacing: 0.2rem;
 }
 #date-time-panel .time, #date-time-panel .date, #date-time-panel .weather, #date-time-panel .greeting {
   font-weight: 600;
-}
-#date-time-panel .time, #date-time-panel .date, #date-time-panel .weather, #date-time-panel .meridiem {
-  font-family: "Adelle", sans-serif;
 }
 #date-time-panel .date, #date-time-panel .weather {
   font-size: 70px;
@@ -40,7 +37,7 @@
 #date-time-panel .time {
   font-size: 240px;
   text-transform: lowercase;
-  display: inline;
+  display: inline-block;
 }
 #date-time-panel .weather {
   text-align: right;
@@ -56,4 +53,213 @@
   font-size: 70px;
   display: inline;
   margin-left: 15px;
+}
+
+@font-face {
+  font-family: "artill_clean_icons";
+  font-style: normal;
+  font-weight: normal;
+  src: local("artill_clean_icons"), url("./font/artill_clean_icons.otf") format("opentype");
+}
+i {
+  color: #fff;
+  font-family: "artill_clean_icons";
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-0:before {
+  content: ":";
+}
+
+.icon-1:before {
+  content: "p";
+}
+
+.icon-2:before {
+  content: "S";
+}
+
+.icon-3:before {
+  content: "Q";
+}
+
+.icon-4:before {
+  content: "S";
+}
+
+.icon-5:before {
+  content: "W";
+}
+
+.icon-6:before {
+  content: "W";
+}
+
+.icon-7:before {
+  content: "W";
+}
+
+.icon-8:before {
+  content: "W";
+}
+
+.icon-9:before {
+  content: "I";
+}
+
+.icon-10:before {
+  content: "W";
+}
+
+.icon-11:before {
+  content: "I";
+}
+
+.icon-12:before {
+  content: "I";
+}
+
+.icon-13:before {
+  content: "I";
+}
+
+.icon-14:before {
+  content: "I";
+}
+
+.icon-15:before {
+  content: "W";
+}
+
+.icon-16:before {
+  content: "I";
+}
+
+.icon-17:before {
+  content: "W";
+}
+
+.icon-18:before {
+  content: "U";
+}
+
+.icon-19:before {
+  content: "Z";
+}
+
+.icon-20:before {
+  content: "Z";
+}
+
+.icon-21:before {
+  content: "Z";
+}
+
+.icon-22:before {
+  content: "Z";
+}
+
+.icon-23:before {
+  content: "Z";
+}
+
+.icon-24:before {
+  content: "E";
+}
+
+.icon-25:before {
+  content: "E";
+}
+
+.icon-26:before {
+  content: "3";
+}
+
+.icon-27:before {
+  content: "a";
+}
+
+.icon-28:before {
+  content: "A";
+}
+
+.icon-29:before {
+  content: "a";
+}
+
+.icon-30:before {
+  content: "A";
+}
+
+.icon-31:before {
+  content: "6";
+}
+
+.icon-32:before {
+  content: "1";
+}
+
+.icon-33:before {
+  content: "6";
+}
+
+.icon-34:before {
+  content: "1";
+}
+
+.icon-35:before {
+  content: "W";
+}
+
+.icon-36:before {
+  content: "1";
+}
+
+.icon-37:before {
+  content: "S";
+}
+
+.icon-38:before {
+  content: "S";
+}
+
+.icon-39:before {
+  content: "S";
+}
+
+.icon-40:before {
+  content: "M";
+}
+
+.icon-41:before {
+  content: "W";
+}
+
+.icon-42:before {
+  content: "I";
+}
+
+.icon-43:before {
+  content: "W";
+}
+
+.icon-44:before {
+  content: "a";
+}
+
+.icon-45:before {
+  content: "S";
+}
+
+.icon-46:before {
+  content: "U";
+}
+
+.icon-47:before {
+  content: "S";
 }

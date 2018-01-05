@@ -21,17 +21,27 @@
     <script src="js/jquery.min.js" charset="utf-8"></script>
     <script src="js/script.js" charset="utf-8"></script>
     <script src="js/jquery.simpleWeather.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    // Refresh page every 60 seconds to ensure digital displays stay current.
+      setTimeout(function(){
+        location = ''
+    },600000)
+    </script>
 </head>
 <body onload = "timeOfDay()">
     <div id="container">
 
     <div id="date-time-panel">
-        <h2 class="time"></h2><span class="meridiem"></span>
-        <p class="date"></p>
-        <p class="weather"></p>
+        <div id="time-panel">
+            <h2 class="time"></h2><span class="meridiem"></span>
+        </div>
+        <div id="date-weather-panel">
+            <p class="date"></p>
+            <p class="weather"></p>
+        </div>
         <h3 class="greeting"></h3>
     </div>
-
 
     </div>
 </body>
