@@ -32,18 +32,22 @@ function timeOfDay( ) {
     var greetingMsg = document.querySelector('.greeting')
     var backgroundIMG = document.getElementById('container')
 
-    if (hour < 12)  {
-        clockMeridiem.innerHTML = 'am';
-        greetingMsg.innerHTML = 'Good morning';
-        backgroundIMG.style.background = "url('/img/clouds.jpg')"
-    } if (hour < 18 && hour > 12 ) {
+    if (hour >= 12 && hour < 18) {
         clockMeridiem.innerHTML = 'pm';
         greetingMsg.innerHTML = 'Good afternoon';
-        backgroundIMG.style.background = "url('/img/clear.jpg')"
-    } else {
+        backgroundIMG.style.background = 'url("/img/afternoon.jpg")';
+    } if (hour >= 18 && hour < 20) {
+        clockMeridiem.innerHTML = 'pm';
+        greetingMsg.innerHTML = 'Good evening';
+        backgroundIMG.style.background = 'url("/img/evening.jpg")';
+    } if (hour >= 20 && hour < 24) {
         clockMeridiem.innerHTML = 'pm';
         greetingMsg.innerHTML = 'Goodnight';
-        backgroundIMG.style.background = "url('/img/night.jpg')"
-
+        backgroundIMG.style.background = 'url("/img/night.jpg")';
+    } else if (hour >= 24 && hour < 12){
+        clockMeridiem.innerHTML = 'am';
+        greetingMsg.innerHTML = 'Good morning';
+        backgroundIMG.style.background = 'url("/img/morning.jpg")';
     }
+    console.log(hour)
 }
