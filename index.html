@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-control" content="public">
     <script src="//use.typekit.net/qbl8uug.js"></script>
     <script>
         try {
@@ -16,33 +17,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Lato:200,200i,400,400i,700,700i&subset=latin-ext" rel="stylesheet">
 
-    <!-- DOCUMENT SCRIPTS -->
-    <script src="js/moment.min.js" charset="utf-8"></script>
-    <script src="js/jquery.min.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
-    <script src="js/jquery.simpleWeather.js" charset="utf-8"></script>
 
-    <script type="text/javascript">
+
+    <!-- <script type="text/javascript">
     // Refresh page every 60 seconds to ensure digital displays stay current.
       setTimeout(function(){
         location = ''
     },600000)
-    </script>
+    </script> -->
 </head>
 <body onload = "timeOfDay()">
     <div id="container">
 
     <div id="date-time-panel">
-        <div id="time-panel">
             <h2 class="time"></h2><span class="meridiem"></span>
-        </div>
-        <div id="date-weather-panel">
             <p class="date"></p>
             <p class="weather"></p>
-        </div>
         <h3 class="greeting"></h3>
     </div>
 
     </div>
+    <!-- DOCUMENT SCRIPTS -->
+    <script src="js/moment.min.js" charset="utf-8"></script>
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/jquery.simpleWeather.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

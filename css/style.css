@@ -31,6 +31,7 @@
   font-weight: 600;
 }
 #date-time-panel .date, #date-time-panel .weather {
+  margin-top: -75px;
   font-size: 70px;
   display: inline-block;
 }
@@ -38,6 +39,7 @@
   font-size: 240px;
   text-transform: lowercase;
   display: inline-block;
+  margin-top: 90px;
 }
 #date-time-panel .weather {
   text-align: right;
@@ -59,7 +61,7 @@
   font-family: "artill_clean_icons";
   font-style: normal;
   font-weight: normal;
-  src: local("artill_clean_icons"), url("./font/artill_clean_icons.otf") format("opentype");
+  src: local("artill_clean_icons"), url("font/artill_clean_icons.otf") format("opentype");
 }
 i {
   color: #fff;
